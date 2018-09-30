@@ -1,0 +1,33 @@
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+.background {
+    background-color: #D5B0AC;
+}
+
+span {
+    display: flex;
+    width: 100px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #402E2A;    
+}
+
+span:hover {
+    background-color : #9CD08F;
+    color: #FFFFFF;
+}
+
+.mb-2px {
+    margin-bottom: 2px;
+}
+
+.menu-vertical {
+    display: flex;
+    flex-direction: column;
+
+}
