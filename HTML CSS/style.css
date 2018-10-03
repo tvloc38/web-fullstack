@@ -3,6 +3,7 @@
     color: #402E2A;
     font-weight: bold;
     text-align: center;
+    position: relative;
 }
 
 .menu span {
@@ -10,6 +11,7 @@
     width: 100px;
     height: 30px;
     line-height: 30px;
+    position: relative;
 }
 
 .menu span:hover {
@@ -18,17 +20,20 @@
     cursor: pointer;
 }
 
-.menu_vertical {
-    margin-top: 25px;
-    background: transparent;
-}
-
-.menu_vertical span {
-    display: block;
-    background: #D5B0AC;
-}
-
 .sub-menu {
     display: none;
+    position: absolute;
+}
 
+span:hover > .sub-menu {
+    display: block;
+}
+
+.sub-menu span {
+    display: block;
+}
+
+.sub-menu .sub-menu {
+    left: 100%;
+    top: 0;
 }

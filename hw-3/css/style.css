@@ -1,0 +1,28 @@
+.header {
+    background-color: #0000ff;
+    text-align: center;
+}
+
+.nav {
+    text-align: center;
+    background-color: #800080;
+}
+
+.main {
+    text-align: center;
+    background-color: #ffd700;
+}
+
+.aside {
+    text-align: center;
+    background-color: #808080;
+}
+
+.footer {
+    text-align: center;
+    background-color: #00ffff;
+}
+
+.w-245 {
+    width: 24.5%;
+}
