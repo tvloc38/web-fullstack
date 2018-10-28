@@ -4,10 +4,9 @@ const Schema = mongoose.Schema;
 
 
 const PlayerSchema = new Schema({
-    name: { type: String, required: true},
-    creater: { type: Number, required: true},
-    score: { type: Number, default: 0},
-    round: Number,
+    name: { type: Array, required: true},
+    score: { type: Array},
+    round: {type: Number}
 });
 
 module.exports = mongoose.model("Player", PlayerSchema);
