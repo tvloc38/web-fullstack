@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hỏi nhanh</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/ask">Hỏi nhanh</a></li>
+            <li><a href="/answer">Đáp gọn</a></li>
+        </ul>
+    </nav>
+
+    <div>
+        <center>
+            <h1>
+                Hãy hỏi một câu đúng hoặc sai tới cộng đồng !!!
+            </h1>
+            <form action="/createquestion" method="POST">
+                <textarea name="questionContent" id="questionContent" cols="30" rows="10" maxlength="200"></textarea>
+                <span>Còn <span id="remainChar">200</span>/200 kí tự</span>
+                <button type="submit">Gửi</button>
+            </form>
+        </center>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="ask.js"></script>
+</body>
+</html>
