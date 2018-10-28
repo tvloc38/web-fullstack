@@ -2,7 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 
-const QuestionModel = require("./models/questionModel");
+const PlayerModel = require("./models/playerModel");
 
 mongoose.connect("mongodb://localhost/minihack",(err) => {
     if(err) console.log(err);
