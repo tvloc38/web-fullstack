@@ -29,6 +29,27 @@ app.post("/adduser", (req, res) => {
     );
 });
 
+app.post("/addround", (req, res) => {
+    let playerId = req.body.playerid;
+    console.log(playerId);
+    
+    PlayerModel.findById(playerId, function(err, playerFound) {
+        if(err) console.log(err);
+        else if(!playerFound) console.log("Player not found");
+        else {
+            playerFound.score.push([0,0,0,0]);
+            console.log(playerFound.score);
+
+            playerFound.save(function(err) {
+                if(err) {
+                    console.log(err);
+                }
+            });
+            res.send(playerFound);
+        };
+    });
+})
+
 app.get("/games/:id", (req, res) => {
     res.sendFile(__dirname + "/public/detail.html");
 })

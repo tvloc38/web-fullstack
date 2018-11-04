@@ -1,0 +1,19 @@
+* User
+    * name
+    * email
+    * password
+    * avatar
+    * intro
+    * posts
+* Image
+    * User
+    * view
+    * like
+    * data
+    * url
+    * caption
+    * title
+    * comments
+* Comment
+    * user
+    * content

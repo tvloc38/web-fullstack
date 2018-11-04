@@ -5,12 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Details</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="/detail.css">
 </head>
 <body>
-    <div>
-        <h1 id="name"></h1>
+    <div class="container">
+        <h1>ScoreKepper</h1>
+        <hr>
+        <table width="100%" border="1" id="myTable" >
+            <thead>
+                <tr>
+                    <th></th>
+                    <th id="name1"></th>
+                    <th id="name2"></th>
+                    <th id="name3"></th>
+                    <th id="name4"></th>
+                </tr>
+            </thead>
+            <tbody id="addRow">
+                <tr>
+                    <td>Sum of Score(<span id="sos"></span>)</td>
+                    <td id="sop1s"></td>
+                    <td id="sop2s"></td>
+                    <td id="sop3s"></td>
+                    <td id="sop4s"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <center>
+            <button id="addRound" type="submit" data-playerid="" class="btn btn-secondary btn-lg bg-danger">ADD ROUND</button>
+        </center>
     </div>
+    
+    
+        
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="detail.js"></script>
+    <script src="/detail.js"></script>
 </body>
 </html>
