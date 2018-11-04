@@ -63,14 +63,37 @@ $("#addRound").on("click", function() {
     });
 });
 
+$("#myTable").on("input", function() {
+    tableSum();
+})
+
 function tableSum() {
-    var elements = document.getElementsByClassName("column1");
-    for (var i = 0, len = elements.length; i < len; i++) {
-        // elements[i].style ...
-        // let valueCell = elements[i].text();
-        elements[i].input.value; 
-        
-    }
+    var player1Score = 0;
+    var player2Score = 0;
+    var player3Score = 0;
+    var player4Score = 0;
+    $(".column1").each(function(index) {
+        let x = $(this).find("input").val();
+        player1Score = player1Score + parseInt(x);
+    });
+    $(".column2").each(function(index) {
+        let x = $(this).find("input").val();
+        player2Score += parseInt(x);
+    });
+    $(".column3").each(function(index) {
+        let x = $(this).find("input").val();
+        player3Score += parseInt(x);
+    });
+    $(".column4").each(function(index) {
+        let x = $(this).find("input").val();
+        player4Score += parseInt(x);
+    });
+
+    $("#sop1s").text(player1Score);
+    $("#sop2s").text(player2Score);
+    $("#sop3s").text(player3Score);
+    $("#sop4s").text(player4Score);
     
+    $("#sos").text(player1Score + player2Score + player3Score + player4Score);
 }
 
